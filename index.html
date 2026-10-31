@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ASKIIMMM! ♡</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-heart">♡</div><p>senin için hazırlanıyor...</p></div>
+<div class="birthday-gate" id="birthdayGate" role="dialog" aria-modal="true" aria-labelledby="birthdayGateTitle">
+  <div class="gate-card">
+    <p class="gate-script">senin için küçük bir dilek...</p>
+    <h2 id="birthdayGateTitle">Mumunu üfle<br><em>ve başlayalım.</em></h2>
+    <div class="birthday-cake" aria-hidden="true">
+      <div class="cake-candle candle-one"><span class="candle-flame"></span><span class="candle-smoke"></span></div>
+      <div class="cake-candle candle-two"><span class="candle-flame"></span><span class="candle-smoke"></span></div>
+      <div class="cake-candle candle-three"><span class="candle-flame"></span><span class="candle-smoke"></span></div>
+      <div class="cake-candle candle-four"><span class="candle-flame"></span><span class="candle-smoke"></span></div>
+      <div class="cake-candle candle-five"><span class="candle-flame"></span><span class="candle-smoke"></span></div>
+      <div class="cake-layer cake-top"></div>
+      <div class="cake-layer cake-bottom"></div>
+      <div class="cake-plate"></div>
+    </div>
+    <p class="gate-note">Önce bir dilek tut. ♡</p>
+    <button class="gate-button" id="blowStart" type="button">Üfle ve başla <span>→</span></button>
+  </div>
+  <img class="page-sticker gate-sticker gate-balloons" src="assets/stickers/balloons.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-strawberry-kitty" src="assets/stickers/strawberry-kitty.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-party-kitten" src="assets/stickers/kitten-cake.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-hat-burst" src="assets/stickers/party-hat-burst.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-birthday-words" src="assets/stickers/birthday-words.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-jellyfish" src="assets/stickers/pink-jellyfish.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-monkichi" src="assets/stickers/monkichi-party.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker gate-sticker gate-fireworks" src="assets/stickers/pastel-fireworks.jpg" alt="" aria-hidden="true">
+</div>
+<div class="floating" id="floating"></div>
+<div class="cursor-dot"></div>
+
+<nav>
+  <a class="mini-logo" href="#home">N ♡ U</a>
+  <div class="nav-links"><a href="#story">hikâyemiz</a><a href="#memories">anılar</a><a href="#video">video ♡</a><a href="#gifts">sürprizler</a><a href="#quiz">quiz</a></div>
+  <button id="musicBtn">♫ <span>our song</span></button>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="sparkles"></div>
+  <div class="hero-photo" style="background-image:url('assets/photo-1.jpg')"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <div class="tiny-pill">04 • 11 • 2026 · for my favorite person</div>
+    <p class="script">ASKIIMMM!</p>
+    <h1>Doğum Günün<br><em>Kutlu olsunnn</em></h1>
+    <p class="hero-text">Hazırsan, senin için hazırladığım küçük evrene girelim. ♡</p>
+    <button class="start-btn" onclick="startWorld()">İçeri gir <span>→</span></button>
+  </div>
+  <div class="hero-bottom"><span>scroll</span><i>↓</i><span>slowly</span></div>
+</section>
+
+<section class="welcome section">
+  <div class="sticker s1">♡</div><div class="sticker s2">for you!</div>
+  <img class="page-sticker welcome-flower" src="assets/stickers/flower-ghost.jpg" alt="" aria-hidden="true">
+  <img class="page-sticker welcome-cats" src="assets/stickers/party-cats.jpg" alt="" aria-hidden="true">
+  <div class="eyebrow">01 / sadece ikimiz</div>
+  <h2>Birlikte biriktirdiğimiz<br><em>küçük şeyler.</em></h2>
+  <div class="mini-stats"><div><b id="days">∞</b><small>anı</small></div><div><b>∞</b><small>gülüş</small></div><div><b>1</b><small>aşkım</small></div></div>
+</section>
+
+<section class="story section" id="story">
+ <img class="page-sticker story-age" src="assets/stickers/age-meme.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker story-confetti" src="assets/stickers/party-confetti.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker story-kitten" src="assets/stickers/birthday-kitten.jpg" alt="" aria-hidden="true">
+ <div class="eyebrow">02 / bizim hikâyemiz</div>
+ <div class="story-title"><h2>Bir zamanlar<br><em>biz başladık.</em></h2><span>→ kaydır</span></div>
+ <div class="story-track">
+  <article class="story-card"><div class="story-no">01</div><img src="assets/photo-2.jpg"><div><small>THE BEGINNING</small><h3>İlk iletişimimiz.</h3><p>Temel bilgisayar vizesi sağolsun suan bugundeyiz ehe.</p></div></article>
+  <article class="story-card pink"><div class="story-no">02</div><img src="assets/photo-3.jpg"><div><small>THE FIRSTS</small><h3>İlkler hiç unutulmuyor.</h3><p>ilk fotoğraf, ilk sarılma...</p></div></article>
+  <article class="story-card cream"><div class="story-no">03</div><img src="assets/photo-4.jpg"><div><small>RIGHT NOW</small><h3>Hikaye hala devam ediyor.</h3><p>Ve sonsuza kadar devam etmesini umuyorum. Daha yaşayacağımız çok şey var.</p></div></article>
+ </div>
+</section>
+
+<section class="memories section" id="memories">
+ <img class="page-sticker memories-bouquet" src="assets/stickers/bouquet-cat.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker memories-kitten" src="assets/stickers/kitten-cake-flowers.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker memories-habedee" src="assets/stickers/habedee-balloons.jpg" alt="" aria-hidden="true">
+ <div class="eyebrow">03 / anılar</div>
+ <h2>Fotoğraflara<br><em>dokun.</em></h2>
+ <p class="section-note">Her fotoğrafın arkasında küçük bir hikaye var.</p>
+ <div class="scrapbook">
+   <button class="polaroid p1" data-img="assets/photo-5.jpg" data-text="Birlikte ilk tatilimizz."><img src="assets/photo-5.jpg"><b>us ♡</b><small>muuahh</small></button>
+   <button class="polaroid p2" data-img="assets/photo-6.jpg" data-text="Aslan avini yicek glb."><img src="assets/photo-6.jpg"><b>favorite</b><small>♡ ♡ ♡</small></button>
+   <button class="polaroid p3" data-img="assets/photo-7.jpg" data-text="Birlikte daha çok böyle fotoğraf çekelim."><img src="assets/photo-7.jpg"><b>memory</b><small>keep this one</small></button>
+   <button class="polaroid p4" data-img="assets/photo-8.jpg" data-text="Sadece ikimizin bildiği bir an."><img src="assets/photo-8.jpg"><b>just us</b><small>don't forget</small></button>
+   <button class="polaroid p5" data-img="assets/photo-9.jpg" data-text="Daha yazılacak çok bölümümüz var."><img src="assets/photo-9.jpg"><b>to be continued...</b><small>2025 → ∞</small></button>
+ </div>
+</section>
+
+<section class="letters section">
+ <div class="letter-bg">LOVE</div>
+ <img class="page-sticker letters-pinkie" src="assets/stickers/pinkie-pie.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker letters-kitty" src="assets/stickers/kitten-bow.jpg" alt="" aria-hidden="true">
+ <div class="eyebrow">04 / aç bakalım</div>
+ <h2>3 küçük<br><em>mektup.</em></h2>
+ <div class="envelope-row">
+  <button class="envelope" data-title="Seni seviyorum çünkü..." data-body="Yanında kendim olabiliyorum. En saçma halimle gülebiliyorum. Bazen hiçbir şey yapmadan sadece yanında olmak bile yetiyor. İyi ki varsın balımmm!!"><span>01</span><strong>♡</strong><b>Seni seviyorum<br>çünkü...</b><small>zarfı aç →</small></button>
+  <button class="envelope" data-title="Sende en sevdiğim..." data-body="Sıradan bir günü bile birlikte dolu dolu geçirebilmemiz. Seninle birlikteyken zamanın nasıl geçtiğini anlamamam. Ve tabi ki bana olan ilgin ve sevginn."><span>02</span><strong>♡</strong><b>Sende en sevdiğim<br>şey...</b><small>zarfı aç →</small></button>
+  <button class="envelope" data-title="Son bir istek..." data-body="Daha çok gezmek, daha çok gülmek, daha çok fotoğraf çekmek ve birlikte daha çok anı biriktirmek istiyorum."><span>03</span><strong>♡</strong><b>Son bir<br>istek...</b><small>zarfı aç →</small></button>
+ </div>
+</section>
+
+<section class="gifts section" id="gifts">
+ <img class="page-sticker gifts-cat" src="assets/stickers/birthday-cat.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker gifts-bird" src="assets/stickers/party-bird.jpg" alt="" aria-hidden="true">
+ <div class="eyebrow">05 / sürpriz zamanı</div>
+ <h2>Hangisinin içinde<br><em>ne var?</em></h2>
+ <p class="section-note light">Hepsine tıklayabilirsin.</p>
+ <div class="gift-grid">
+  <button class="gift" data-msg="Beraber nice yaşlara aşkım. İyi ki benimle berabersin.">🎀<i>01</i></button>
+  <button class="gift" data-msg="Seni her şeyden çok seviyorum ömrüm benim.">🫶🏻<i>02</i></button>
+  <button class="gift" data-msg="Sana kocaman bir sarılma bıraktım HEMEEEN">❤️‍🔥<i>03</i></button>
+  <button class="gift locked" data-msg="yaz">🔒<i>04</i></button>
+  <button class="gift" data-msg="Daha yaşicak çok zamanımız var.">💗<i>05</i></button>
+ </div>
+</section>
+
+<section class="quiz section" id="quiz">
+ <img class="page-sticker quiz-disco" src="assets/stickers/disco-ball.jpg" alt="" aria-hidden="true">
+ <img class="page-sticker quiz-kitten" src="assets/stickers/kitten-cake.jpg" alt="" aria-hidden="true">
+ <div class="eyebrow">06 / bakalım</div>
+ <h2>Beni<br><em>ne kadar tanıyorsun?</em></h2>
+ <div class="quiz-card">
+   <div class="quiz-top"><span id="qCount">01 / 05</span><div class="progress"><i id="progress"></i></div></div>
+   <div id="quizArea"></div>
+ </div>
+</section>
+
+<section class="video-memory section" id="video">
+ <img class="page-sticker video-kitten" src="assets/stickers/party-kitten-blue.png" alt="" aria-hidden="true">
+ <img class="page-sticker video-frog" src="assets/stickers/party-frog.jpg" alt="" aria-hidden="true">
+ <div class="video-sparkle vs1">✦</div><div class="video-sparkle vs2">♡</div>
+ <div class="eyebrow">07 / yalnızca bize ait</div>
+ <p class="video-script">küçük bir anı...</p>
+ <h2>Birlikte<br><em>izleyelim.</em></h2>
+ <p class="section-note">Ne zaman özlersen, buradan yeniden açabilirsin. ♡</p>
+ <div class="video-frame">
+   <span class="video-tape tape-left">♡</span><span class="video-tape tape-right">♡</span>
+   <video controls playsinline preload="metadata" aria-label="Birlikte izleyebileceğiniz özel video">
+     <source src="assets/umut-anilar.mp4" type="video/mp4">
+     Tarayıcın bu videoyu oynatamıyor. Dosyayı farklı bir tarayıcıda açmayı deneyebilirsin.
+   </video>
+   <div class="video-caption"><span>our little moment</span><b>♡</b><span>play whenever you miss us</span></div>
+ </div>
+</section>
+
+<section class="final" id="final">
+ <div class="final-bg" style="background-image:url('assets/photo-10.jpg')"></div>
+ <div class="final-shade"></div>
+ <div class="final-content">
+   <div class="eyebrow">08 / son bir şey</div>
+   <p class="final-script">Balımm...</p>
+   <h2>İyi ki<br><em>doğdun.</em></h2>
+   <p class="final-text">Geçmişte yaşadığımız bütün güzel şeyler için teşekkür ederim. Ama benim en sevdiğim kısmı henüz yaşamadık. Çünkü seninle daha yaşayacağımız çok şey var.</p>
+   <button class="final-btn" onclick="finalSurprise()">son sürprizi aç ♡</button>
+   <div id="finalMessage"></div>
+ </div>
+</section>
+</main>
+
+<div class="modal" id="modal"><button class="close">×</button><div id="modalInner"></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
